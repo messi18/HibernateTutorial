@@ -16,7 +16,7 @@ public class Event {
         return id;
     }
 
-    private void SetId(Long id){
+    private void setId(Long id){
         this.id = id;
     }
 

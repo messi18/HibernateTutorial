@@ -1,6 +1,7 @@
 package org.hibernate.tutorial.test;
 
 import org.hibernate.tutorial.EventManager;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -8,7 +9,13 @@ import org.junit.Test;
  */
 public class EventManagerTest {
     @Test
-    public void shouldEventManagerWork(){
+    @Ignore
+    public void shouldEventManagerWorkOnStore(){
         EventManager.main(new String[]{"store"});
+    }
+
+    @Test
+    public void shouldEventManagerWorkOnAddPersonToEvent() {
+        EventManager.main(new String[]{"addpersontoevent"});
     }
 }
